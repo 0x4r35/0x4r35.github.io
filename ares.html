@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>0x4r35 aka Manav | Cybersecurity Portfolio</title>
+  <style>
+    /* ===== Hacker + Cryptography Theme ===== */
+
+    /* subtle cryptography background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,255,156,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,156,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: -1;
+    }
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #0b0f14;
+      color: #00ff9c;
+    }
+
+    header {
+      position: relative;
+      overflow: hidden;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #00ff9c33;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba(0,255,156,0.4);
+    }
+
+    header p {
+      color: #9effd4;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: #0e141b;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #00ff9c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 5px #00ff9c;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-left: 4px solid #00ff9c;
+      padding-left: 10px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "// crypto";
+      font-size: 0.75rem;
+      color: #00ffaa;
+      margin-left: 10px;
+      opacity: 0.6;
+    }
+      border-left: 4px solid #00ff9c;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #0e141b, #0b1218);
+      border: 1px solid #00ff9c33;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      box-shadow: 0 0 20px rgba(0,255,156,0.05);
+    }
+      background: #0e141b;
+      border: 1px solid #00ff9c33;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .achievement {
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-left: 3px solid #00ff9c;
+      background: repeating-linear-gradient(
+        135deg,
+        #0b1218,
+        #0b1218 10px,
+        #0e161f 10px,
+        #0e161f 20px
+      );
+      font-size: 1.05rem;
+    }
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-left: 3px solid #00ff9c;
+      background: #0b1218;
+      font-size: 1.05rem;
+    }
+
+    .achievement.top {
+      font-size: 1.15rem;
+      border-left-color: #ffd700;
+      color: #ffd700;
+      font-weight: bold;
+    }
+
+    .achievement.high {
+      border-left-color: #c0c0c0; /* silver */
+      color: #c0c0c0;
+      font-weight: bold;
+    }
+
+    .achievement.bronze {
+      border-left-color: #cd7f32; /* bronze */
+      color: #cd7f32;
+      font-weight: bold;
+    }
+
+    .achievement.mid {
+      border-left-color: #00cc88;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #00ff9c33;
+      color: #9effd4;
+    }
+
+    .glitch {
+      color: #00ff9c;
+    }
+
+    
+
+    .glitch::before {
+      animation: glitchTop 1.5s infinite linear;
+      clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+      color: #00ffaa;
+    }
+
+    .glitch::after {
+      animation: glitchBottom 1.5s infinite linear;
+      clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+      color: #00cc88;
+    }
+
+    
+      20% { transform: translate(-2px, -2px); }
+      40% { transform: translate(2px, 2px); }
+      60% { transform: translate(-1px, 1px); }
+      80% { transform: translate(1px, -1px); }
+      100% { transform: translate(0); }
+    }
+
+    
+      20% { transform: translate(2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(1px, -1px); }
+      80% { transform: translate(-1px, 1px); }
+      100% { transform: translate(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="font-size:0.8rem;opacity:0.6;letter-spacing:1px;">RSA · AES · CBC · ECC · HASH</div>
+  <h1 class="glitch" data-text="0x4r35"><span style="font-size:2.5rem;">0x4r35</span><br><span style="font-size:1.2rem; color:#9effd4;">aka Manav</span></h1>
+  <p>Cybersecurity | Bug Bounty | Cryptography | CTF Player</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a <b>second-year cybersecurity student</b> with a strong focus on <b>cryptography</b> and <b>red teaming</b>.
+      I am also a <b>rookie</b> in <b>reverse engineering</b> and <b>binary exploitation</b>, actively learning through
+      hands-on practice and competitive CTF challenges.<br><br>
+      I regularly participate in CTF competitions and play for <b>Lil L3ak</b>, continuously improving my technical
+      depth across offensive security and problem-solving domains.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Cryptography</li>
+      <li>RSA, AES</li>
+      <li>CBC Oracle Attacks</li>
+      <li>Python, SageMath</li>
+      <li>C++</li>
+      <li>Linux</li>
+      <li>Intermediate Web Exploitation</li>
+      <li>OSINT Investigations</li>
+      <li>Misc CTF Challenges</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>ping</h3>
+    <p>
+      A low-level networking utility focused on understanding ICMP packets and network reachability.
+      Built to explore how latency, packet loss, and protocol behavior work under the hood, with an
+      emphasis on learning raw sockets and network internals.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>zero-alloc-binary-parser</h3>
+    <p>
+      A high-performance binary parser designed with <b>zero heap allocations</b> in mind.
+      Focuses on memory-safe parsing, efficient data handling, and reverse-engineering–friendly design,
+      making it suitable for CTF challenges, binary analysis, and performance-critical tooling.
+    </p>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li class="achievement top">🥇 <b>BuckeyeCTF 2025</b> — 1st Place (Open Section)</li>
+      <li class="achievement top">🥇 <b>Starpwn CTF</b> — 1st Place (Aerospace Village DEF CON MetaCTF)</li>
+
+      <li class="achievement high">🏆 <b>BrunnerCTF</b> — 2nd Place</li>
+      <li class="achievement bronze">🌞 <b>Sunshine CTF 2025</b> — 3rd Place</li>
+
+      <li class="achievement mid">🏅 <b>TheHackersCrew CTF</b> — Top 5 Finish</li>
+      <li class="achievement mid">🛡️ <b>FortID CTF</b> — 5th Place</li>
+      <li class="achievement mid">🧊 <b>Glacier CTF</b> — 8th Place</li>
+
+      <li class="achievement mid">🏅 <b>K17 CTF</b> — Top 10 Finish</li>
+      <li class="achievement mid">🔒 <b>NULLCON CTF</b> — 9th Place</li>
+      <li class="achievement mid">🛰️ <b>ASIS CTF</b> — 9th Place</li>
+      <li class="achievement mid">🔑 <b>07CTF</b> — 9th Place</li>
+    </ul>
+  </div>
+</section>
+
+<section id="platform-solves">
+  <h2>Platform Solves</h2>
+  <div class="card">
+    <ul>
+      <li class="achievement high">🔐 <b>CryptoHack</b> — World Ranking: Top 500</li>
+      <li class="achievement high">🇮🇳 <b>CryptoHack</b> — India Rank: 22</li>
+      <li class="achievement mid">👤 Username: <b>aresinheaven</b></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <b>howalmanav43@gmail.com</b></p>
+    <p>GitHub: <b>https://github.com/0x4r35</b></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 0x4r35 (Manav) | Built for GitHub Pages</p>
+</footer>
+
+</body>
+</html>
